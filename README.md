@@ -2,8 +2,8 @@
 
 Todolist app built using react for frontend web development.
 
-1. Git repository link:https://github.com/satyam-software-developer/superhero-hunter-vanilla-javascript.git
-2. Hosted link: https://satyam-software-developer.github.io/superhero-hunter-vanilla-javascript/
+1. Git repository link:https://github.com/satyam-software-developer/todolist-react-app.git
+2. Hosted link:  https://satyam-software-developer.github.io/todolist-react-app/
 
 # Todo List
 
@@ -41,7 +41,7 @@ Basic understanding of React and JavaScript
 # Setup Instructions
 
 1. Clone the repository:
-   git clone https://github.com/satyam-software-developer/superhero-hunter-vanilla-javascript.git
+   git clone https://github.com/satyam-software-developer/todolist-react-app.git
    cd todolist-react-app
 2. Install dependencies:
    npm install
@@ -126,7 +126,7 @@ This project is licensed under the MIT License.
 
 ## DEMO
 
-- https://satyam-software-developer.github.io/superhero-hunter-vanilla-javascript/
+-  https://satyam-software-developer.github.io/todolist-react-app/
 
 ## Author
 
