@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import TodoList from "./Component/TodoList"; // Import the TodoList component from the specified file path
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Render the TodoList component inside the App component */}
+      <TodoList />
+    </>
   );
 }
 
-export default App;
+export default App; // Export the App component to be used as the main entry point of the application

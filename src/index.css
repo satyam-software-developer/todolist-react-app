@@ -1,13 +1,30 @@
+/* 
+  Reset the default margin for the body to ensure consistent spacing across browsers 
+  and set the default font family to ensure a consistent look across different devices and platforms.
+*/
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  margin: 0; /* Removes any default margin applied to the body */
+
+  /* Sets the font-family to prioritize platform-specific fonts. 
+     Fallbacks are provided for various systems like Apple, Windows, Linux, etc. */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+
+  /* Applies smoother font rendering for better readability on WebKit-based browsers (like Chrome and Safari) */
   -webkit-font-smoothing: antialiased;
+
+  /* Optimizes font smoothing for non-WebKit browsers like Firefox */
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* 
+  Define a custom font stack for code blocks or elements wrapped in <code> tags, 
+  using monospaced fonts commonly found on different operating systems.
+*/
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  /* Sets the font-family to various monospaced fonts for code elements, 
+     prioritizing 'source-code-pro' and falling back to common alternatives like Menlo, Monaco, Consolas, etc. */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+## TodoList React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Todolist app built using react for frontend web development.
 
-## Available Scripts
+1. Git repository link:https://github.com/satyam-software-developer/superhero-hunter-vanilla-javascript.git
+2. Hosted link: https://satyam-software-developer.github.io/superhero-hunter-vanilla-javascript/
 
-In the project directory, you can run:
+# Todo List
 
-### `npm start`
+This is a simple Todo List application built using React. It allows users to add, edit, and delete tasks, mark tasks as completed, and filter tasks based on their completion status.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Project Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is a simple TodoList application built using React, which allows users to:
 
-### `npm test`
+- Fetch todo items from an API.
+- Add a new todo item (dummy POST request).
+- Update an existing todo item (dummy PUT request).
+- Delete a todo item (dummy DELETE request).
+  The app uses the JSONPlaceholder API for fetching, adding, updating, and deleting todos. Please note that all POST, PUT, and DELETE requests are dummy and do not actually persist on the server.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Features
 
-### `npm run build`
+Add tasks: Users can enter new tasks in the input field and click the "Add" button to add them to the list.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Edit tasks: Users can click the edit icon next to a task to edit its title.
+- Delete tasks: Users can click the delete icon next to a task to delete it from the list.
+- Mark tasks as completed: Users can check the checkbox next to a task to mark it as completed.
+- Complete all tasks: Users can click the "Complete all tasks" link to mark all tasks as completed.
+- Delete completed tasks: Users can click the "Delete Comp tasks" link to delete all completed tasks.
+- Filter tasks: Users can use the dropdown menu to filter tasks based on their completion status.
+- Task count: The total number of tasks and the number of completed tasks are displayed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Run the Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Prerequisites
 
-### `npm run eject`
+Node.js and npm installed
+Basic understanding of React and JavaScript
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Setup Instructions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+   git clone https://github.com/satyam-software-developer/superhero-hunter-vanilla-javascript.git
+   cd todolist-react-app
+2. Install dependencies:
+   npm install
+3. Run the project:
+   npm start
+   This will start the development server and open the app in your browser at http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Folder Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+todolist-react-app/
+├── public/
+│ ├── index.html
+│ └── ...
+├── src/
+│ ├── components/
+│ │ ├── TodoList.js // Component to render list of todos
+│ │ ├── TodoItem.js // Component for each todo item
+│ │ └── AddTodo.js // Component to add a new todo
+│ ├── services/
+│ │ └── api.js // Contains API call functions (GET, POST, PUT, DELETE)
+│ ├── App.js // Main application component
+│ ├── index.js // Application entry point
+│ └── ...
+├── .gitignore
+├── README.md
+└── package.json
 
-## Learn More
+# API Endpoints
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Fetch todos: GET /todos
+- Add todo: POST /todos
+- Update todo: PUT /todos/:id
+- Delete todo: DELETE /todos/:id
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Dummy Requests Information
 
-### Code Splitting
+All requests (POST, PUT, DELETE) are dummies. They won't actually modify the server, but you can view the modified data in the app's local state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# How to Use the App
 
-### Analyzing the Bundle Size
+1. On loading, the app will fetch and display todos from the API.
+2. You can add a new todo by filling in the input and clicking the “Add” button.
+3. To edit an item, click the "Edit" button next to a todo item, modify the title, and confirm.
+4. To delete a todo, simply click the "Delete" button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Dependencies
 
-### Making a Progressive Web App
+The following dependencies are used in this project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- react: ^16.0.0
+- react-dom: ^16.0.0
+- react-toastify: ^8.0.0
+  You can find the complete list of dependencies with their versions in the package.json file.
 
-### Advanced Configuration
+## API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The application uses the JSONPlaceholder API to fetch and update tasks. The API endpoint used is: https://jsonplaceholder.typicode.com/todos
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you'd like to contribute to this project, please follow these steps:
 
-### `npm run build` fails to minify
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements
+
+- The Todo List app was created as a learning exercise based on a tutorial or example.
+- [React](https://reactjs.org/) - The JavaScript library used for building the user interface.
+- [React Toastify](https://fkhadra.github.io/react-toastify/) - A library for displaying toast notifications in React applications.
+
+## Conclusion
+
+This TodoList app demonstrates basic CRUD operations using a dummy API and provides a simple yet effective way to learn how to interact with RESTful APIs in React.
+
+## License
+
+This project is licensed under the MIT License.
+
+## DEMO
+
+- https://satyam-software-developer.github.io/superhero-hunter-vanilla-javascript/
+
+## Author
+
+SATYAM KUMAR
