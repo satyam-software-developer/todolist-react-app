@@ -1,11 +1,11 @@
 ## Todolist React App
 
-Todolist app built using react for frontend web development.
+Todo list app built using react for frontend web development.
 
 1. Demo: https://drive.google.com/file/d/1Lpbq0tLxkisP1Uj4vZsvDGDJlDhMG5d_/view?usp=sharing
 2. Hosted link:  https://satyam-software-developer.github.io/todolist-react-app/
 
-# Todolist
+# Todo List
 
 This is a simple Todo List application built using React. It allows users to add, edit, and delete tasks, mark tasks as completed, and filter tasks based on their completion status.
 
