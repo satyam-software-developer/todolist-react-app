@@ -2,7 +2,7 @@
 
 Todolist app built using react for frontend web development.
 
-1. Git repository link:https://github.com/satyam-software-developer/todolist-react-app.git
+1. Demo: https://drive.google.com/file/d/1Lpbq0tLxkisP1Uj4vZsvDGDJlDhMG5d_/view?usp=sharing
 2. Hosted link:  https://satyam-software-developer.github.io/todolist-react-app/
 
 # Todo List
@@ -13,11 +13,11 @@ This is a simple Todo List application built using React. It allows users to add
 
 This is a simple TodoList application built using React, which allows users to:
 
-- Fetch todo items from an API.
-- Add a new todo item (dummy POST request).
-- Update an existing todo item (dummy PUT request).
-- Delete a todo item (dummy DELETE request).
-  The app uses the JSONPlaceholder API for fetching, adding, updating, and deleting todos. Please note that all POST, PUT, and DELETE requests are dummy and do not actually persist on the server.
+- Fetch to-do items from an API.
+- Add a new to-do item (dummy POST request).
+- Update an existing to-do item (dummy PUT request).
+- Delete a to-do item (dummy DELETE request).
+  The app uses the JSONPlaceholder API for fetching, adding, updating, and deleting todos. Please note that all POST, PUT, and DELETE requests are dummies and do not actually persist on the server.
 
 # Features
 
@@ -57,7 +57,7 @@ todolist-react-app/
 │ └── ...
 ├── src/
 │ ├── components/
-│ │ ├── TodoList.js // Component to render list of todos
+│ │ ├── TodoList.js // Component to render a list of todos
 │ │ ├── TodoItem.js // Component for each todo item
 │ │ └── AddTodo.js // Component to add a new todo
 │ ├── services/
@@ -84,7 +84,7 @@ All requests (POST, PUT, DELETE) are dummies. They won't actually modify the ser
 
 1. On loading, the app will fetch and display todos from the API.
 2. You can add a new todo by filling in the input and clicking the “Add” button.
-3. To edit an item, click the "Edit" button next to a todo item, modify the title, and confirm.
+3. To edit an item, click the "Edit" button next to a to-do item, modify the title, and confirm.
 4. To delete a todo, simply click the "Delete" button.
 
 # Dependencies
@@ -123,10 +123,6 @@ This TodoList app demonstrates basic CRUD operations using a dummy API and provi
 ## License
 
 This project is licensed under the MIT License.
-
-## DEMO
-
--  https://satyam-software-developer.github.io/todolist-react-app/
 
 ## Author
 
