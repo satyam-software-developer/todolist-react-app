@@ -24,7 +24,8 @@ const TodoList = () => {
         "https://jsonplaceholder.typicode.com/todos"
       ); // Fetch 4 tasks from the placeholder API
       const todos = await response.json(); // Convert the response to JSON
-      setTasks(todos); // Set the tasks in state
+      // setTasks(todos); // Set the tasks in state
+      setTasks(todos.slice(0, 10)); // Only take the first 10 todos
       setIsLoading(false); // Stop loading once data is fetched
     } catch (error) {
       console.log("Error fetching todos:", error); // Log any errors that occur
@@ -164,8 +165,7 @@ const TodoList = () => {
   if (isLoading) {
     return <div>Loading...</div>; // Display loading message if tasks are not yet loaded
   }
-
-  // Render the todo list UI
+// Render the todo list UI
   return (
     <div className="container">
       <ToastContainer /> {/* Container for displaying toast notifications */}
@@ -225,12 +225,14 @@ const TodoList = () => {
                   className="edit"
                   data-id={task.id}
                   onClick={() => handleEditTask(task.id)} // Edit task on click
+                  alt="Edit task"
                 />
                 <img
                   src="https://cdn-icons-png.flaticon.com/128/3096/3096673.png"
                   className="delete"
                   data-id={task.id}
                   onClick={() => handleDeleteTask(task.id)} // Delete task on click
+                  alt="Delete task"
                 />
               </div>
             </li>
@@ -242,23 +244,18 @@ const TodoList = () => {
           <div className="dropdown">
             <button className="dropbtn">Filter</button> {/* Filter button */}
             <div className="dropdown-content">
-              <a href="#" id="all" onClick={() => handleFilterChange("all")}>
+              <button id="all" onClick={() => handleFilterChange("all")}>
                 All
-              </a>
-              <a
-                href="#"
+              </button>
+              <button
                 id="rem"
                 onClick={() => handleFilterChange("uncompleted")}
               >
                 Uncompleted
-              </a>
-              <a
-                href="#"
-                id="com"
-                onClick={() => handleFilterChange("completed")}
-              >
+              </button>
+              <button id="com" onClick={() => handleFilterChange("completed")}>
                 Completed
-              </a>
+              </button>
             </div>
           </div>
 
@@ -287,3 +284,4 @@ const TodoList = () => {
 };
 
 export default TodoList; // Export the component for use in other parts of the app
+
