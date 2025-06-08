@@ -24,8 +24,8 @@ const TodoList = () => {
         "https://jsonplaceholder.typicode.com/todos"
       ); // Fetch 4 tasks from the placeholder API
       const todos = await response.json(); // Convert the response to JSON
-      // setTasks(todos); // Set the tasks in state
-      setTasks(todos.slice(0, 10)); // Only take the first 10 todos
+      setTasks(todos); // Set the tasks in state
+      // setTasks(todos.slice(0, 10)); // Only take the first 10 todos
       setIsLoading(false); // Stop loading once data is fetched
     } catch (error) {
       console.log("Error fetching todos:", error); // Log any errors that occur
